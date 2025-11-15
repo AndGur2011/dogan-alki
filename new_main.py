@@ -31,6 +31,7 @@ right = False
 left = False
 count = 0
 while game:
+    window.fill((255,218, 115))
     man.draw()
     for eve in pygame.event.get():
         if eve.type == pygame.QUIT:
@@ -50,4 +51,5 @@ while game:
             count += 1
 
     pygame.display.update()
+
     fps.tick(60)
